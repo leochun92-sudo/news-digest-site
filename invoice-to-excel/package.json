@@ -1,0 +1,21 @@
+{
+  "name": "invoice-to-excel",
+  "version": "1.0.0",
+  "description": "Read invoice PDFs (Ozeki shops) and append supplier / shop / date / total to a local Excel file. Skips statements and duplicates. Designed to run from an n8n node.",
+  "main": "src/processInvoices.js",
+  "bin": {
+    "invoice-to-excel": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/cli.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "pdf-parse": "^1.1.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "pdfkit": "^0.19.1"
+  }
+}
